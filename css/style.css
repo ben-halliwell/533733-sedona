@@ -1,12 +1,9 @@
 body {
-	margin: 0;
-	padding: 0;
-	
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
-	color: #000000;
+	color: #333333;
 	text-transform: uppercase;
 }
 
@@ -15,17 +12,66 @@ a {
 }
 
 /*Настройки навигации*/
+.wrapper {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .main-navigation {
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
 	background-color: #ffffff;
+}	
+
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -67px;
 }
 
 .site-navigation {
-	list-style: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 14px 40px 0px;
 }
+
+.site-navigation > li {
+    width: 300px;
+    text-align: center;
+}
+
+.site-navigation li:nth-child(1) {
+	padding-top: 2px;
+	text-align: right;
+	padding-right: 70px;
+}
+
+.site-navigation li:nth-child(2) {
+	padding-top: 2px;
+	text-align: center;
+	padding-right: 100px;
+
+}
+
+.site-navigation li:nth-child(3) {
+	padding-top: 2px;
+	text-align: center;
+	padding-left: 100px;
+
+}
+
+.site-navigation li:nth-child(4) {
+	padding-top: 2px;
+	text-align: left;
+	padding-left: 70px;
+}
+
 .site-navigation a {
 	color: #000000;
 }
@@ -41,10 +87,15 @@ a {
 
 /*Приветствие*/
 .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 	background-image: url('../img/bg-image.jpg');		
 	background-color: #ffffff;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
+	height: 773px;
+	width: auto;
 }
 
 /*Введение*/
@@ -52,8 +103,12 @@ a {
 	text-align: center;
 
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 24px;
 	color: #333333;
+	background-color: #ffffff;
+	
+	display: block;
+	padding-bottom: 55px;
 }
 
 .headline .deserve {
@@ -63,21 +118,35 @@ a {
 	color: #000000;	
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
+
 /*Поиск гостиниц*/
+.selection {
+	display: block;
+	padding-top: 55px;
+}
+
 .selections h2 {
 	text-align: center;
-	font-size: 21px;
-	line-height: 26px;
+	font-size: 30px;
+	line-height: 36px;
 	font-weight: bold;
 	color: #000000;	
 }
 
 .selections p {
 	text-align: center;
-	font-size: 10px;
-	line-height: 14px;
+	font-size: 14px;
+	line-height: 24px;
 	font-weight: 100;
-	color: #000000;	
+	color: #333333;	
 }
 
 /*Форма поиска гостиниц*/
@@ -87,6 +156,11 @@ a {
 	line-height: 26px;
 	font-weight: bold;
 	color: #ffffff;	
+	
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding-top: 55px;
 
 }
 
@@ -144,6 +218,7 @@ input:active {
 
 .button-read-more {
     background-color: #81b3d2;
+	
 }
 
 .button:hover,
@@ -157,6 +232,16 @@ input:active {
 }
 
 /*Выбор гостиниц*/
+.hotels-list-inner {
+	display: flex;
+	align-content: space-around;
+	width: 1056px;
+	padding: 30px 0;
+	margin: 30px 0;
+}
+
+
+
 .button-reserved {
     background-color: #766357;
 }
@@ -179,7 +264,7 @@ input:active {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 100;
-	color: #000000;
+	color: #333333;
 }
 
 .hotels-title {
@@ -212,10 +297,46 @@ input:active {
 }
 
 /*Футер*/
-.main-footer span {
+.footer-container {
+	width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 160px 10px 0;
+}
+
+.hashtag {
 	font-weight: bold;
+	flex-basis: 400px;
+	padding: 0 70px;
+	}
+
+.footer-social > ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
+	
+	flex-basis: 400px;
+}
+
+.social-botton {
+    background-color: #81b3d2;
 }
 
 .footer-social > ul {
 	list-style: none;
+}
+
+.webcite-by {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	
+	display: flex;
+	align-items: center;
+	flex-basis: 400px;
+	margin: 0 10px;
+	padding: 0 70px;
 }
