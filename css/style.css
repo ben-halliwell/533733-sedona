@@ -29,7 +29,7 @@ body {
 
 .wrapper-inner {
     margin: 0 auto;
-    padding: 0 70px;
+    padding: 0 30px;
 }
 
 /*Настройки навигации*/
@@ -62,7 +62,6 @@ body {
     display: block;
     padding: 15px 45px;
     vertical-align: middle;
-    /* width: 153px;*/
 }
 
 .site-navigation > li {
@@ -101,7 +100,7 @@ body {
 
 .welcome img {
     padding-top: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 55px;
 }
 
 /*Введение*/
@@ -123,7 +122,7 @@ body {
     font-weight: bold;
     color: #000000;
     padding-top: 60px;
-    padding-bottom: 35px;
+    padding-bottom: 15px;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -160,8 +159,8 @@ body {
     line-height: 36px;
     font-weight: bold;
     color: #000000;
-    padding-top: 60px;
-    padding-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 .selections .wrapper-inner > p {
@@ -170,6 +169,7 @@ body {
     line-height: 24px;
     font-weight: 100;
     color: #333333;
+	margin-bottom: 0px;
 }
 
 /*Форма поиска гостиниц*/
@@ -231,7 +231,11 @@ body {
 .appointment-date-in,
 .appointment-date-out {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.appointment-form label {
+	padding-left: 5px;
 }
 
 .appointment-form input {
@@ -247,15 +251,14 @@ body {
 .appointment-date-in input,
 .appointment-date-out input {
     width: 345px;
-    padding-top: 8px;
+    padding-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     margin-left: 20px;
 
     border: solid 1px transparent;
 }
-
 
 .appointment-form input:hover,
 .appointment-form input:focus {
@@ -267,29 +270,11 @@ body {
     border-color: #e5e5e5;
 }
 
-/*изображение календаря*/
-/*#date-in::before,
-#date-out::before {
-    content: "";
-
-    position: absolute;
-    top: 5px;
-    right: 9px;
-
-    width: 88px;
-    height: 92px;
-
-    background-image: url("../img/calendar.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    opacity: 0.3;
-}*/
 .appointment-date-in > svg,
 .appointment-date-out > svg {
     position: absolute;
     right: 10px;
-    top: 4px;
+    top: 6px;
     z-index: 1;
     opacity: 0.3;
 }
@@ -297,10 +282,18 @@ body {
 .appointment-date-in:hover > svg,
 .appointment-date-out:hover > svg,
 .appointment-date-in:focus > svg,
-.appointment-date-out:focus > svg,
+.appointment-date-out:focus > svg {
+    opacity: 1;
+}
+
+
 .appointment-date-in:active > svg,
 .appointment-date-out:active > svg {
-    opacity: 1;
+    color: #81b3d2;
+}
+
+.appointment-clients {
+	margin-top: 0px;
 }
 
 .appointment-clients > span {
@@ -311,7 +304,7 @@ body {
 }
 
 .appointment-clients > span:last-child {
-    padding-left: 20px;
+    padding-left: 55px;
 }
 
 .appointment-clients input {
@@ -337,6 +330,21 @@ body {
     padding-left: 55px;
 }
 
+.appointment-clients svg {
+	position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+}
+.appointment-clients label > svg {
+	right: 100px;
+    top: 18px;
+}
+
+.appointment-clients input > svg {
+	right: 150px;
+    top: 6px;
+}
+
 .button {
     display: inline-block;
     padding: 10px 30px;
@@ -351,20 +359,26 @@ body {
 }
 
 .button-search {
+	font-size: 21px;
+    line-height: 26px;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
+	margin-top: 40px;
+	margin-bottom: 110px;
 
     background-color: #81b3d2;
 }
 
 .button-read-more {
     background-color: #81b3d2;
-    padding: 5px 17px;
+    padding: 1px 17px;
+    margin-top: 5px;
 }
 
 .button-reserved {
     background-color: #81b3d2;
-    padding: 5px 17px;
+    padding: 1px 17px;
+    margin-top: 5px;
 }
 
 .button:hover,
@@ -394,6 +408,10 @@ body {
 }
 
 /*--hotels-list--*/
+.hotels-list-box {
+	margin-top: 30px;
+}
+
 .hotels-list-box > ul {
     margin: 0;
     padding: 0;
@@ -409,14 +427,17 @@ body {
 .hotels-list-inner {
     display: flex;
     justify-content: space-between;
-    padding: 30px 70px;
+    padding-top: 0px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    padding-left: 70px;
     margin-bottom: 30px;
-    border-bottom: solid 2px #000000;
+    border-bottom: solid 1px;
+	border-color: rgba(0, 0, 0, 0.3);
 }
 
 .hotels-list-item {
     display: flex;
-
 }
 
 .hotels-list {
@@ -425,7 +446,9 @@ body {
 }
 
 .hotels-list-img {
-    margin-right: 30px;
+    margin-right: 29px;
+    padding-left: 10px;
+    padding-top: 0px;
 }
 
 .hotels-title {
@@ -452,6 +475,7 @@ body {
     flex-direction: column;
     margin: 0;
     margin-bottom: 10px;
+	margin-right: 6px;
 }
 
 .hotels-list span {
@@ -466,10 +490,13 @@ body {
 .hotels-list-rating {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+	align-items: flex-end;
 }
 
-.stars-rating {}
+.stars-rating {
+	margin-bottom: 20px;
+}
 
 .rating {
     text-align: right;
@@ -478,9 +505,15 @@ body {
     font-weight: 100;
     color: #666666;
     background-color: #f2f2f2;
+	
+	padding: 3px 15px;
 }
 
 /*Футер*/
+.main-footer {
+	margin-top: 35px;
+}
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -488,6 +521,7 @@ body {
 }
 
 .hashtag {
+	font-size: 21px;
     font-weight: bold;
     padding: 0 70px;
     width: 30%;
@@ -526,4 +560,9 @@ body {
     align-items: center;
     width: 30%;
     justify-content: center;
+}
+
+.webcite-by > span {
+	font-size: 14px;
+	padding-right: 10px;
 }
