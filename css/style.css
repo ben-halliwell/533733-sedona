@@ -1,7 +1,7 @@
 /*Настройки общие*/
 a {
     text-decoration: none;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 img {
@@ -22,14 +22,14 @@ body {
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-	box-shadow: 0 0 20px rgba(0,0,0,0.5);
-	
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
 }
 
 .wrapper-inner {
     margin: 0 auto;
     padding: 0 30px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*Настройки навигации*/
@@ -47,9 +47,9 @@ body {
     top: 0;
     left: 50%;
     margin-left: -67px;
-	box-sizing: border-box;
-	
-	z-index: 2;
+    box-sizing: border-box;
+
+    z-index: 2;
 }
 
 .site-navigation {
@@ -58,7 +58,7 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .site-navigation a {
@@ -66,7 +66,7 @@ body {
     display: block;
     padding: 15px 45px;
     vertical-align: middle;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .site-navigation > li {
@@ -76,7 +76,7 @@ body {
 .site-navigation li:nth-child(3) {
     text-align: right;
     margin-left: 20%;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .site-navigation li:nth-child(4) {
@@ -93,21 +93,21 @@ body {
 }
 
 .active-a-menu {
-	box-sizing: border-box;
-	opacity: 0.3;
-	display: block;
+    box-sizing: border-box;
+    opacity: 0.3;
+    display: block;
     padding: 15px 45px;
     vertical-align: middle;
 }
 
 /*Приветствие*/
 .welcome {
-	position: relative; 
-	
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-	
+
     background-image: url('../img/bg-image.jpg');
     background-color: #ffffff;
     background-position: top;
@@ -116,21 +116,21 @@ body {
 }
 
 .welcome:after {
-	content: ""; 
-	position: absolute; 
-	left: 0; 
-	bottom: 0; 
-	display: block; 
-	width: 100%; 
-	height: 55px; 
-	background-image: url('../img/intro-mask.svg'); 
-	background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background-image: url('../img/intro-mask.svg');
+    background-repeat: no-repeat;
 }
 
 .welcome img {
     padding-top: 75px;
     padding-bottom: 80px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*введение*/
@@ -144,7 +144,7 @@ body {
 
     display: block;
     padding-bottom: 55px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .headline .deserve {
@@ -152,14 +152,14 @@ body {
     line-height: 26px;
     font-weight: bold;
     color: #000000;
-    padding-top: 60px;
-    padding-bottom: 15px;
-	box-sizing: border-box;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
-	box-sizing: border-box;
+    box-sizing: border-box;
 
     width: 1px;
     height: 1px;
@@ -178,7 +178,7 @@ body {
 .selection {
     display: block;
     padding-top: 55px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .selections .wrapper-inner {
@@ -203,7 +203,7 @@ body {
     line-height: 24px;
     font-weight: 100;
     color: #333333;
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 /*Форма поиска гостиниц*/
@@ -218,7 +218,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 55px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .search-hotels {
@@ -228,7 +228,7 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .search-hotels:hover,
@@ -247,13 +247,13 @@ body {
     color: #333333;
     padding-top: 55px;
     padding-bottom: 55px;
-    padding-left: 50px;
+    padding-left: 55px;
     padding-right: 55px;
     display: flex;
     flex-direction: column;
     width: 100%;
-	
-	box-sizing: border-box;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 }
 
 .appointment-form p {
@@ -272,8 +272,7 @@ body {
 }
 
 .appointment-form label {
-	padding-left: 5px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .appointment-form input {
@@ -294,7 +293,7 @@ body {
     padding-right: 15px;
     padding-bottom: 5px;
     margin-left: 20px;
-	box-sizing: border-box;
+    box-sizing: border-box;
     border: solid 1px transparent;
 }
 
@@ -331,8 +330,8 @@ body {
 }
 
 .appointment-clients {
-	margin-top: 0px;
-	box-sizing: border-box;
+    margin-top: 0px;
+    box-sizing: border-box;
 }
 
 .appointment-clients > label {
@@ -340,6 +339,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.appointment-clients > label:last-child {
+    padding-left: 48px;
 }
 
 .appointment-clients span {
@@ -353,25 +356,21 @@ body {
     padding: 5px;
     text-align: center;
     border: none;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.appointment-clients button {
+/*------------------------*/
+.button-minus,
+.button-plus {
+    position: relative;
     background-color: #f2f2f2;
     box-sizing: border-box;
     width: 38px;
     height: 38px;
     padding: 5px;
-    text-align: center;
-    border: 0;
-	box-sizing: border-box;
-}
-
-.appointment-clients button > span {
-    position: relative;
-    width: 100%;
-    height: 100%;
     display: block;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .button-minus::before,
@@ -386,28 +385,29 @@ body {
 
 .button-minus::before,
 .button-plus::before {
-    left: 8px;
-    top: 12px;
+    left: 13px;
+    top: 18px;
 }
 
 .button-plus::after {
-    left: 8px;
-    top: 12px;
+    left: 13px;
+    top: 18px;
     transform: rotate(90deg);
 }
 
-.appointment-clients button:hover .button-minus::before,
-.appointment-clients button:hover .button-plus::before,
-.appointment-clients button:hover .button-plus::after {
+.button-minus:hover::before,
+.button-plus:hover::before,
+.button-plus:hover::after {
     background-color: #000000;
 }
 
-.appointment-clients button:active .button-minus::before,
-.appointment-clients button:active .button-plus::before,
-.appointment-clients button:active .button-plus::after {
+.button-minus:active::before,
+.button-plus:active::before,
+.button-plus:active::after {
     background-color: #81b3d2;
 }
 
+/*---------------*/
 .appointment-clients svg:nth-child(2):hover,
 .appointment-clients svg:nth-child(2):focus,
 .appointment-clients svg:last-child:hover,
@@ -422,8 +422,8 @@ body {
 
 /*кнопки*/
 .button {
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
+
     display: inline-block;
     padding: 10px 30px;
 
@@ -437,32 +437,31 @@ body {
 }
 
 .button-search {
-	box-sizing: border-box;
-	
-	font-size: 21px;
+    box-sizing: border-box;
+
+    font-size: 21px;
     line-height: 26px;
     width: 100%;
     padding: 15px;
-	margin-top: 40px;
-	margin-bottom: 80px;
-	
+    margin-top: 40px;
+
     background-color: #81b3d2;
 }
 
 .button-read-more {
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
+
     background-color: #81b3d2;
     padding: 1px 17px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .button-reserved {
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
+
     background-color: #81b3d2;
     padding: 1px 17px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .button:hover,
@@ -493,12 +492,12 @@ body {
 
 /*список отелей*/
 .hotels-list-box {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 .hotels-list-box > ul {
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
+
     margin: 0;
     padding: 0;
 }
@@ -511,17 +510,17 @@ body {
 }
 
 .hotels-list-inner {
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
+
     display: flex;
     justify-content: space-between;
-    padding-top: 0px;
+    padding-top: 30px;
     padding-right: 70px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-left: 70px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px;*/
     border-bottom: solid 1px;
-	border-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 .hotels-list-item {
@@ -534,23 +533,25 @@ body {
 }
 
 .hotels-list-img {
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
+
     margin-right: 29px;
     padding-top: 0px;
 }
 
-/*
+
 .hotels-list-img > img {
-	min-height: 100%;
+    min-height: 100%;
+    display: block;
+
 }
-*/
+
 
 .hotels-title {
     width: 100%;
     margin: 0;
     font-size: 21px;
-    line-height: 26px;
+    line-height: 22px;
     font-weight: bold;
     color: #000000;
 }
@@ -569,8 +570,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding-bottom: 10px;
-	margin-right: 6px;
+    /* padding-bottom: 10px;*/
+    margin-right: 6px;
 }
 
 .hotels-list span {
@@ -585,31 +586,31 @@ body {
 .hotels-list-rating {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-	align-items: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .stars-rating {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .rating {
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
+
     text-align: right;
     font-size: 14px;
     line-height: 21px;
     font-weight: 100;
     color: #666666;
     background-color: #f2f2f2;
-	
-	padding: 3px 15px;
+
+    padding: 3px 15px;
 }
 
 /*Футер*/
 .main-footer {
-	margin-top: 35px;
-	padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 50px;
 }
 
 .footer-container {
@@ -619,9 +620,9 @@ body {
 }
 
 .hashtag {
-	box-sizing: border-box;
-	
-	font-size: 21px;
+    box-sizing: border-box;
+
+    font-size: 21px;
     font-weight: bold;
     padding: 0 70px;
     width: 30%;
@@ -629,8 +630,8 @@ body {
 }
 
 .footer-social > ul {
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -644,8 +645,8 @@ body {
 }
 
 .social-botton {
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
+
     background-color: #81b3d2;
     padding: 15px 10px;
     display: flex;
@@ -657,7 +658,7 @@ body {
 
 .social-botton:hover,
 .social-botton:focus {
-	background-color: #669ec0;
+    background-color: #669ec0;
 }
 
 .social-botton:active svg path {
@@ -676,19 +677,19 @@ body {
 }
 
 .webcite-by > span {
-	box-sizing: border-box;
-	
-	font-size: 14px;
-	padding-right: 10px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    padding-right: 10px;
 }
 
 .footer-logo:hover svg path,
 .footer-logo:focus svg path {
-	fill: #81b3d2;
+    fill: #81b3d2;
 }
 
 
 .footer-logo:active svg {
-	fill: #000000;
+    fill: #000000;
     opacity: 0.3;
 }
