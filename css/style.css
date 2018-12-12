@@ -22,11 +22,8 @@ body {
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-	
-}
-
-.wrapper .welcome {
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	
 }
 
 .wrapper-inner {
@@ -51,6 +48,8 @@ body {
     left: 50%;
     margin-left: -67px;
 	box-sizing: border-box;
+	
+	z-index: 2;
 }
 
 .site-navigation {
@@ -342,19 +341,11 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-/*
-.appointment-clients > span {
-	position: relative;
+
+.appointment-clients span {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
 }
 
-.appointment-clients > span:last-child {
-    padding-left: 55px;
-}
-*/
 .appointment-clients input {
     box-sizing: border-box;
     width: 38px;
@@ -383,7 +374,6 @@ body {
     display: block;
 }
 
-
 .button-minus::before,
 .button-plus::before,
 .button-plus::after {
@@ -404,7 +394,6 @@ body {
     left: 8px;
     top: 12px;
     transform: rotate(90deg);
-
 }
 
 .appointment-clients button:hover .button-minus::before,
@@ -704,8 +693,8 @@ body {
 	background-color: #669ec0;
 }
 
-.social-botton svg:active {
-	fill: #88b6d1;
+.social-botton:active svg path {
+    fill: #88b6d1;
 }
 
 .webcite-by {
@@ -726,12 +715,13 @@ body {
 	padding-right: 10px;
 }
 
-.footer-logo svg:hover,
-.footer-logo svg:focus {
+.footer-logo:hover svg path,
+.footer-logo:focus svg path {
 	fill: #81b3d2;
 }
 
 
-.footer-logo svg:active {
-    opacity: 1;
+.footer-logo:active svg {
+	fill: #000000;
+    opacity: 0.3;
 }
