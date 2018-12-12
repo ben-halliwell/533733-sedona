@@ -407,40 +407,7 @@ body {
 .appointment-clients button:active .button-plus::after {
     background-color: #81b3d2;
 }
-/*
-.appointment-adults input {
-    padding-left: 40px;
-}
 
-.appointment-childrens input {
-    padding-left: 33px;
-}
-
-.appointment-clients > label:last-child {
-    padding-left: 50px;
-}
-
-.appointment-clients > label > span {
-    display: flex;
-}
-
-.appointment-clients > span:last-child {
-    padding-left: 55px;
-}
-
-.appointment-clients svg {
-	position: absolute;
-    z-index: 1;
-    opacity: 0.3;
-}
-.appointment-clients svg:nth-child(2) {
-	right: 94px;
-}
-
-.appointment-clients svg:last-child {
-	right: 10px;
-}
-*/
 .appointment-clients svg:nth-child(2):hover,
 .appointment-clients svg:nth-child(2):focus,
 .appointment-clients svg:last-child:hover,
