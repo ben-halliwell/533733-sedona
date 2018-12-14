@@ -1,4 +1,4 @@
-/*Настройки общие*/
+/*common settings*/
 a {
     text-decoration: none;
     box-sizing: border-box;
@@ -9,7 +9,8 @@ img {
     height: auto;
 }
 
-/*Настройки body*/
+
+/*body's settings*/
 body {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
@@ -32,7 +33,8 @@ body {
     box-sizing: border-box;
 }
 
-/*Настройки навигации*/
+
+/*navigation's settings*/
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
@@ -94,13 +96,14 @@ body {
 
 .active-a-menu {
     box-sizing: border-box;
-    opacity: 0.3;
+    color: #766357;
     display: block;
     padding: 15px 45px;
     vertical-align: middle;
 }
 
-/*Приветствие*/
+
+/*welcoming*/
 .welcome {
     position: relative;
 
@@ -133,7 +136,8 @@ body {
     box-sizing: border-box;
 }
 
-/*введение*/
+
+/*introduction*/
 .headline {
     text-align: center;
 
@@ -143,7 +147,7 @@ body {
     background-color: #ffffff;
 
     display: block;
-    padding-bottom: 55px;
+    padding-bottom: 40px;
     box-sizing: border-box;
 }
 
@@ -174,7 +178,137 @@ body {
     overflow: hidden;
 }
 
-/*поиск гостиниц*/
+
+/*benefits*/
+
+/*real town*/
+.real-town {
+	text-align: center;
+	margin-bottom: 60px;
+	
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+	
+	display: flex;
+}
+
+.real-town-info { 
+	box-sizing: border-box;
+    background-color: #81b3d2;
+	width: 400px;
+	padding-top: 30px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 50px;
+}
+
+.real-town-info h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.real-town-img > img {
+    display: block;
+}
+
+/*features*/
+.features {
+	margin-bottom: 70px;
+}
+
+.features-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.feature-item {
+	width: 400px;
+	text-align: center;
+}
+
+.feature-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.feature-item p {
+	font-size: 14px;
+	line-height: 21px;
+	padding: 0 40px;
+}
+
+/*devil's bridge*/
+.devils-bridge {
+	text-align: center;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+	
+	display: flex;
+}
+
+.devils-bridge-info { 
+	box-sizing: border-box;
+    background-color: #81b3d2;
+	width: 400px;
+	padding-top: 30px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 50px;
+}
+
+.devils-bridge-info h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+
+.devils-bridge-img > img {
+    display: block;
+}
+
+/*benefits*/
+.benefits {
+	margin-bottom: 20px;
+}
+
+.benefits-list {
+	display: flex;
+	margin: 0;
+	padding-top: 30px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 50px;
+	background-color: #eeeeee;
+	
+	list-style: none;
+}
+
+.benefits-item {
+	width: 400px;
+	text-align: center;
+}
+
+.benefits-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.benefits-item p {
+	font-size: 14px;
+	line-height: 21px;
+	padding: 0 40px;
+}
+
+/*hotel's search*/
 .selection {
     display: block;
     padding-top: 55px;
@@ -206,7 +340,8 @@ body {
     margin-bottom: 0px;
 }
 
-/*Форма поиска гостиниц*/
+
+/*hotel's search form*/
 .search {
     font-size: 21px;
     line-height: 26px;
@@ -262,7 +397,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .appointment-date-in,
@@ -335,17 +469,17 @@ body {
 }
 
 .appointment-clients > label {
-    width: 50%;
+    /*  width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 
 .appointment-clients > label:last-child {
-    padding-left: 48px;
+  /*  padding-left: 48px;*/
 }
 
-.appointment-clients span {
+.appointment-clients > span {
     display: flex;
 }
 
@@ -358,8 +492,28 @@ body {
     border: none;
     box-sizing: border-box;
 }
+.appointment-clients button{
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 0;
+    
+}
 
-/*------------------------*/
+.appointment-clients svg:nth-child(2):hover,
+.appointment-clients svg:nth-child(2):focus,
+.appointment-clients svg:last-child:hover,
+.appointment-clients svg:last-child:focus {
+    opacity: 1;
+}
+
+.appointment-clients svg:nth-child(2):active,
+.appointment-clients svg:last-child :active {
+    color: #81b3d2;
+}
+
+
+/*bottons settings*/
 .button-minus,
 .button-plus {
     position: relative;
@@ -407,20 +561,6 @@ body {
     background-color: #81b3d2;
 }
 
-/*---------------*/
-.appointment-clients svg:nth-child(2):hover,
-.appointment-clients svg:nth-child(2):focus,
-.appointment-clients svg:last-child:hover,
-.appointment-clients svg:last-child:focus {
-    opacity: 1;
-}
-
-.appointment-clients svg:nth-child(2):active,
-.appointment-clients svg:last-child :active {
-    color: #81b3d2;
-}
-
-/*кнопки*/
 .button {
     box-sizing: border-box;
 
@@ -474,7 +614,8 @@ body {
     background-color: #5496bd;
 }
 
-/*Выбор гостиниц*/
+
+/*hotel's choiсe*/
 
 .button-reserved {
     background-color: #766357;
@@ -490,7 +631,8 @@ body {
     background-color: #503e33;
 }
 
-/*список отелей*/
+
+/*hotel's list*/
 .hotels-list-box {
     margin-top: 30px;
 }
@@ -518,7 +660,6 @@ body {
     padding-right: 70px;
     padding-bottom: 30px;
     padding-left: 70px;
-    /* margin-bottom: 30px;*/
     border-bottom: solid 1px;
     border-color: rgba(0, 0, 0, 0.3);
 }
@@ -539,13 +680,10 @@ body {
     padding-top: 0px;
 }
 
-
 .hotels-list-img > img {
     min-height: 100%;
     display: block;
-
 }
-
 
 .hotels-title {
     width: 100%;
@@ -582,7 +720,8 @@ body {
     color: #333333;
 }
 
-/*рейтинг отелей*/
+
+/*hotel's raiting*/
 .hotels-list-rating {
     display: flex;
     flex-direction: column;
@@ -607,7 +746,8 @@ body {
     padding: 3px 15px;
 }
 
-/*Футер*/
+
+/*footer's settings*/
 .main-footer {
     padding-top: 35px;
     padding-bottom: 50px;
