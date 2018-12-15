@@ -18,13 +18,14 @@ body {
     font-weight: normal;
     color: #333333;
     text-transform: uppercase;
+    background-color: #efefef;
 }
 
 .wrapper {
     width: 1200px;
     margin: 0 auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-
+    background-color: #ffffff;
 }
 
 .wrapper-inner {
@@ -147,7 +148,7 @@ body {
     background-color: #ffffff;
 
     display: block;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     box-sizing: border-box;
 }
 
@@ -183,30 +184,30 @@ body {
 
 /*real town*/
 .real-town {
-	text-align: center;
-	margin-bottom: 60px;
-	
+    text-align: center;
+    margin-bottom: 60px;
+
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
-	
-	display: flex;
+
+    display: flex;
 }
 
-.real-town-info { 
-	box-sizing: border-box;
+.real-town-info {
+    box-sizing: border-box;
     background-color: #81b3d2;
-	width: 400px;
-	padding-top: 30px;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-bottom: 50px;
+    width: 400px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
 }
 
 .real-town-info h3 {
-	font-size: 21px;
-	line-height: 21px;
-	font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
 }
 
 .real-town-img > img {
@@ -215,58 +216,87 @@ body {
 
 /*features*/
 .features {
-	margin-bottom: 70px;
+    margin-bottom: 72px;
 }
 
 .features-list {
-	display: flex;
-	margin: 0;
-	padding: 0;
-	
-	list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
 .feature-item {
-	width: 400px;
-	text-align: center;
+    width: 400px;
+    text-align: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .feature-item h3 {
-	font-size: 21px;
-	line-height: 21px;
-	font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+
+    padding-top: 22px;
 }
 
 .feature-item p {
-	font-size: 14px;
-	line-height: 21px;
-	padding: 0 40px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.feature-item:nth-child(1) {
+    background-image: url('../img/icon-1.svg');
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.feature-item:nth-child(2) {
+    background-image: url('../img/icon-3.svg');
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.feature-item:nth-child(3) {
+    background-image: url('../img/icon-2.svg');
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 /*devil's bridge*/
 .devils-bridge {
-	text-align: center;
+    text-align: center;
 
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
-	
-	display: flex;
+
+    display: flex;
 }
 
-.devils-bridge-info { 
-	box-sizing: border-box;
+.devils-bridge-info {
+    box-sizing: border-box;
     background-color: #81b3d2;
-	width: 400px;
-	padding-top: 30px;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-bottom: 50px;
+    width: 400px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
 }
 
 .devils-bridge-info h3 {
-	font-size: 21px;
-	line-height: 21px;
+    font-size: 21px;
+    line-height: 21px;
 }
 
 
@@ -275,37 +305,35 @@ body {
 }
 
 /*benefits*/
-.benefits {
-	margin-bottom: 20px;
-}
-
 .benefits-list {
-	display: flex;
-	margin: 0;
-	padding-top: 30px;
-	padding-left: 0;
-	padding-right: 0;
-	padding-bottom: 50px;
-	background-color: #eeeeee;
-	
-	list-style: none;
+    display: flex;
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+    background-color: #eeeeee;
+
+    list-style: none;
 }
 
 .benefits-item {
-	width: 400px;
-	text-align: center;
+    width: 400px;
+    text-align: center;
+    padding-right: 60px;
+    padding-left: 60px;
+    box-sizing: border-box;
 }
 
 .benefits-item h3 {
-	font-size: 21px;
-	line-height: 21px;
-	font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
 }
 
 .benefits-item p {
-	font-size: 14px;
-	line-height: 21px;
-	padding: 0 40px;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 /*hotel's search*/
@@ -315,10 +343,19 @@ body {
     box-sizing: border-box;
 }
 
+.selections {
+    position: relative;
+}
+
 .selections .wrapper-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.selections iframe {
+    margin-top: 128px;
+    width: 100%;
 }
 
 .selections .wrapper-inner > h2 {
@@ -327,7 +364,7 @@ body {
     line-height: 36px;
     font-weight: bold;
     color: #000000;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -343,17 +380,23 @@ body {
 
 /*hotel's search form*/
 .search {
+    position: absolute;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: #ffffff;
     width: 570px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 55px;
+	padding-top: 63px;
     box-sizing: border-box;
+    top: 140px;
+    z-index: 100000;
+}
+
+.search iframe {
+    position: relative;
 }
 
 .search-hotels {
@@ -389,6 +432,8 @@ body {
     width: 100%;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
+
+    background-color: #ffffff;
 }
 
 .appointment-form p {
@@ -441,8 +486,8 @@ body {
     border-color: #e5e5e5;
 }
 
-.appointment-date-in > svg,
-.appointment-date-out > svg {
+.appointment-date-in b > svg,
+.appointment-date-out b > svg {
     position: absolute;
     right: 10px;
     top: 6px;
@@ -450,33 +495,21 @@ body {
     opacity: 0.3;
 }
 
-.appointment-date-in:hover > svg,
-.appointment-date-out:hover > svg,
-.appointment-date-in:focus > svg,
-.appointment-date-out:focus > svg {
+.appointment-date-in b:hover > svg,
+.appointment-date-out b:hover > svg,
+.appointment-date-in b:focus > svg,
+.appointment-date-out b:focus > svg {
     opacity: 1;
 }
 
-
-.appointment-date-in:active > svg,
-.appointment-date-out:active > svg {
+.appointment-date-in b:active > svg,
+.appointment-date-out b:active > svg {
     fill: #81b3d2;
 }
 
 .appointment-clients {
     margin-top: 0px;
     box-sizing: border-box;
-}
-
-.appointment-clients > label {
-    /*  width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;*/
-}
-
-.appointment-clients > label:last-child {
-  /*  padding-left: 48px;*/
 }
 
 .appointment-clients > span {
@@ -492,12 +525,13 @@ body {
     border: none;
     box-sizing: border-box;
 }
-.appointment-clients button{
+
+.appointment-clients button {
     width: 38px;
     height: 38px;
     padding: 0;
     border: 0;
-    
+
 }
 
 .appointment-clients svg:nth-child(2):hover,
