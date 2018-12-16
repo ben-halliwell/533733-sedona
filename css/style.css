@@ -22,6 +22,7 @@ body {
 }
 
 .wrapper {
+	position: relative;
     width: 1200px;
     margin: 0 auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -652,7 +653,7 @@ body {
 /*hotel's choice*/
 
 .button-reserved {
-    background-color: #766357;
+	background-color: #766357;
 }
 
 .button-reserved:hover,
@@ -668,144 +669,287 @@ body {
 
 /*filter's settings*/
 .filter-range {
-  width: 330px;
+	width: 320px;
 
-  color: #ffffff;
-  text-transform: uppercase;
+	color: #ffffff;
+	text-transform: uppercase;
+    padding-right: 40px;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+	margin-bottom: 12px;
 
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+	padding-top: 25px;
 }
 
 .price-controls {
-  position: relative;
+	position: relative;
   
-  height: 36px;
-  margin-bottom: 20px;
+	height: 33px;
+	margin-bottom: 20px;
 
-  font-size: 0;
+	font-size: 0;
 
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
 
-  width: 2px;
-  height: 22px;
-
-  background: #ffffff;
-  transform: translate(-50%, -50%);
+	width: 2px;
+	height: 22px;
+	
+	background: #ffffff;
+	transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
+	display: inline-block;
 
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
 
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+	width: 90px;
+	padding-left: 65px;
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
+	width: 50px;
+	margin: 0;
 
-  color: inherit;
-  font: inherit;
-
-  background: none;
-  border: none;
+	color: inherit;
+	font: inherit;
+	
+	background: none;
+	border: none;
 }
 
 .range-controls {
-  position: relative;
+	position: relative;
 
-  margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
+	height: 2px;
 
-  background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
+	width: 80%;
+	height: 2px;
 
-  background: #ffffff;
+	background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
+	position: absolute;
+	top: -9px;
+	
+	width: 4px;
+	height: 4px;
 
-  width: 4px;
-  height: 4px;
-
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+	background: #1c4f80;
 }
 
 .range-toggle-min {
-  left: 0;
+	left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+	left: 80%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
 
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
 
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
+	color: #000000;
+	background: #ffffff;
 }
 
+/*infrastructure's settings*/
+.filter-list {  
+    display: flex;
+	justify-content: space-between;
+
+    background-image: url('../img/bg-image-diffuse.jpg');
+    background-color: #ffffff;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 217px;
+}	
+
+.filter-option {
+	display: flex;
+	padding-top: 25px;
+}
+
+.infrastructure-list,
+.type-of-housing-list {
+	list-style: none;
+	padding-left: 0px;
+} 
+
+.infrastructure {
+	padding-left: 40px;
+}
+
+.filter-title {
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	padding-bottom: 12px;
+}
+
+.infrastructure-option, 
+.type-of-housing-option {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	padding-bottom: 25px;
+	padding-left: 40px;
+}
+
+.infrastructure-option label, 
+.type-of-housing-option label {
+	position: relative;
+		
+	display: block;
+
+	cursor: pointer;
+	user-select: none;
+}
+
+.infrastructure-input + label::before,
+.type-of-housing-input + label::before {
+	content: "";
+	
+	position: absolute;
+	left: -40px;
+	top: 0;
+	
+	width: 26px;
+	height: 23px;
+
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.infrastructure-input:checked + label::before,
+.type-of-housing-input:checked + label::before {
+	content: "";
+	
+	position: absolute;
+	left: -40px;
+	top: 0;
+	
+	width: 26px;
+	height: 23px;
+
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.type-of-housing {
+	padding-left: 120px;
+}
+
+
+/*breadcrumbs*/
+.found {
+	border-bottom: solid 1px;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.breadcrumbs {
+	display: flex;
+	padding-top: 11px;
+	padding-bottom: 15px;
+}
+
+.breadcrumbs h2 {
+	padding-left: 45px;
+	padding-right: 50px;
+	
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.classify {
+	display: flex;
+	list-style: none;
+	
+	padding-top: 25px;
+	padding-left: 0;
+	margin: 0;
+}
+
+.classify li {
+	font-size: 12px;
+	line-height: 18px;
+	padding-right: 30px;
+}
+
+.classify li:first-child {
+	color: #000000;
+}
+
+.classify li:nth-child(2) {
+	color: #81b3d2;
+}
+
+.classify li:nth-child(3),
+.classify li:nth-child(4) {
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+	border-bottom: 1px dotted #81b3d2; 
+}
 
 /*hotel's list*/
-.hotels-list-box {
+/*.hotels-list-box {
     margin-top: 30px;
 }
+*/
 
 .hotels-list-box > ul {
     box-sizing: border-box;
@@ -878,7 +1022,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    /* padding-bottom: 10px;*/
     margin-right: 6px;
 }
 
@@ -921,10 +1064,17 @@ body {
 .main-footer {
     padding-top: 35px;
     padding-bottom: 50px;
+    background-color: rgba(255,255,255, 0.9);
+}
+
+.index-footer {
+	padding-top: 35px;
+    padding-bottom: 50px;
     position: absolute;
     top: 2640px;
     background-color: rgba(255,255,255, 0.9);
-    width: 1200px;
+	bottom: 0;    
+	width: 100%;
 }
 
 .footer-container {

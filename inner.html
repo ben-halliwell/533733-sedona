@@ -27,28 +27,84 @@
 
         <main>
 		
-			<section class="hotels-infrastructure">
-				<div class="infrastructure">
+			<section class="filter">
+				<div class="filter-list wrapper-inner">
+					<div class="filter-option">
+						<div class="infrastructure">
+							<div class="filter-title">Инфраструктура:</div>
+							<ul class="infrastructure-list">
+								<li class="infrastructure-option">
+									<input class="visually-hidden infrastructure-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+									<label for="filter-swimming-pool">Бассейн</label>
+								</li>
+								<li class="infrastructure-option">
+									<input class="visually-hidden infrastructure-input" type="checkbox" name="swimming-pool" id="filter-parking">
+									<label for="filter-swimming-pool">Парковка</label>
+								</li>
+								<li class="infrastructure-option">
+									<input class="visually-hidden infrastructure-input" type="checkbox" name="swimming-pool" id="filter-wifi">
+									<label for="filter-swimming-pool">Wi-fi</label>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="type-of-housing wrapper-inner">
+							<div class="filter-title">Тип жилья:</div>
+							<ul class="type-of-housing-list">
+								<li class="type-of-housing-option">
+									<input class="visually-hidden type-of-housing-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+									<label for="filter-swimming-pool">Гостиница</label>
+								</li>
+								<li class="type-of-housing-option">
+									<input class="visually-hidden type-of-housing-input" type="checkbox" name="motel" id="filter-motel" checked>
+									<label for="filter-swimming-pool">Мотель</label>
+								</li>
+								<li class="type-of-housing-option">
+									<input class="visually-hidden type-of-housing-input" type="checkbox" name="apartaments" id="filter-apartaments" checked>
+									<label for="filter-swimming-pool">Апартаменты</label>
+								</li>
+							</ul>
+						</div>
+					</div>
 					
-				</div>
-				
-				<div class="filter-range">
-					<div class="filter-range-title">Стоимость в сутки (р):</div>
-						<div class="price-controls">
-							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
-							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-						</div>
-						<div class="range-controls">
-							<div class="scale">
-								<div class="bar"></div>
+					<div class="filter-range">
+						<div class="filter-range-title">Стоимость в сутки (р):</div>
+							<div class="price-controls">
+								<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+								<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
 							</div>
-							<div class="range-toggle range-toggle-min"></div>
-							<div class="range-toggle range-toggle-max"></div>
-						</div>
-					<button class="btn-transparent" type="submit">Показать</button>
-				</div>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="range-toggle range-toggle-min"></div>
+								<div class="range-toggle range-toggle-max"></div>
+							</div>
+						<button class="btn-transparent" type="submit">Показать</button>
+					</div>
+				</div>	
 			</section>
 		
+		
+			<section class="found wrapper-inner">
+				<div class="breadcrumbs">
+					<h2>Найдено: 3</h2>
+					<ul class="classify">
+						<li class="classify-item">
+							<span>Сортировка:</span>
+						</li>
+						<li class="classify-item">
+							<span>По цене</span>
+						</li>
+						<li class="classify-item">
+							<span>По типу</span>
+						</li>
+						<li class="classify-item">
+							<span>По рейтингу</span>
+						</li>
+					</ul>
+				</div>		
+			</section>
 		
             <h2 class="visually-hidden">Список гостиниц</h2>
             <section class="hotels-list-box">
@@ -137,7 +193,7 @@
                                 <h3 class="hotels-title">Villas at Poco Diablo</h3>
 
                                 <div class="hotels-list-details">
-                                    <span>Аппартаменты</span>
+                                    <span>Апартаменты</span>
                                     <a class="button button-read-more" href="#">Подробнее</a>
                                 </div>
 
