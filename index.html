@@ -6,7 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
 					<h2 class="visually-hidden">Введение</h2>
 					<p class="deserve">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
 					<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-				</div>	
+				</div>
             </section>
 
             <section class="real-town">
@@ -139,7 +139,7 @@
                                 <label for="appointment-adults">Взрослые:</label>
                                 <span>
                                     <button><span class="button-minus" aria-label="Увеличить количество взрослых"></span></button>
-                                    <input id="appointment-adults" type="number" name="adults" value="" placeholder="2">
+                                    <input id="appointment-adults" type="number" name="adults" value="" placeholder="2" min="0" max="7">
                                     <button><span class="button-plus" aria-label="Уменьшить количество взрослых"></span></button>
                                 </span>
 
@@ -147,7 +147,7 @@
                                 <label for="appointment-childrens">Дети:</label>
                                 <span>
                                     <button><span class="button-minus" aria-label="Увеличить количество детей"></span></button>
-                                    <input id="appointment-childrens" type="number" name="childrens" value="" placeholder="0">
+                                    <input id="appointment-childrens" type="number" name="childrens" value="" placeholder="0" min="0" max="7">
                                     <button><span class="button-plus" aria-label="Уменьшить количество детей"></span></button>
                                 </span>
 
